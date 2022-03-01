@@ -2,7 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://techqu.top/undefined/The-first-step/</loc>
+    <loc>http://techqu.top/about/index.html</loc>
+    
+    <lastmod>2022-03-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://techqu.top/cn/The-first-step/</loc>
     
     <lastmod>2022-03-01</lastmod>
     
@@ -33,13 +40,6 @@
     <loc>http://techqu.top/archive/index.html</loc>
     
     <lastmod>2017-03-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://techqu.top/about/index.html</loc>
-    
-    <lastmod>2016-04-20</lastmod>
     
   </url>
   
