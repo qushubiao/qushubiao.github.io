@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://techqu.top/undefined/The-first-step/</loc>
+    
+    <lastmod>2022-03-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://techqu.top/tags/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
@@ -23,20 +30,6 @@
   </url>
   
   <url>
-    <loc>http://techqu.top/cn/Hexo-Theme-LiveMyLife/</loc>
-    
-    <lastmod>2020-04-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://techqu.top/en/Hexo-Theme-LiveMyLife/</loc>
-    
-    <lastmod>2020-04-16</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://techqu.top/archive/index.html</loc>
     
     <lastmod>2017-03-20</lastmod>
@@ -53,26 +46,12 @@
 
   <url>
     <loc>http://techqu.top/</loc>
-    <lastmod>2022-02-27</lastmod>
+    <lastmod>2022-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
-  <url>
-    <loc>http://techqu.top/tags/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2022-02-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>http://techqu.top/categories/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2022-02-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
   
 </urlset>
