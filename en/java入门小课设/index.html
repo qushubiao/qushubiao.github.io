@@ -139,10 +139,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://techqu.top/">
+  <link rel="canonical" href="http://techqu.top/en/java入门小课设/">
   <title>
     
-      Welcome!My Friend!
+      java入门小课设 - Welcome!My Friend!
     
   </title>
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -300,6 +300,7 @@
           <!-- LangSelect -->
           
           
+          
           <!-- LangSelect start -->
           <!-- LangSelect -->
 <li>
@@ -307,7 +308,7 @@
     <span>
       English
     </span>
-    <select id="lang-select" data-canonical="index.html">
+    <select id="lang-select" data-canonical="en/java入门小课设/">
       
       
       <option value="en"  selected >
@@ -323,6 +324,7 @@
 </li>
 
           <!-- LangSelect end -->
+          
           
           
         </ul>
@@ -384,9 +386,9 @@
     }
 
     header.intro-header {
-       /*config*/
-        background-image: var(--intro-header-background-image-url-home);
-        /* background-image: url('/img/header_img/newhome_bg.jpg'); */
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url(''); */
       
     }
 
@@ -408,10 +410,42 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>欢迎来到小曲同志的毛坯网站</h1>
-            <!--<hr class="small">-->
-            <span class="subheading">快马扬鞭，道阻且长</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#Java" title="Java">Java</a>
+              
+            </div>
+            <h1>java入门小课设</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by Mr.Qu on
+              2022-03-05
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">2</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">654</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -452,365 +486,290 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h1>Java入门小课设</h1>
+<hr>
+<h2 id="思路">思路</h2>
+<ol>
+<li>首先要创建一个Student类，类中放入学生的各种信息：学号、姓名、年龄、地址。并设置为私有变量，另外附加set、get函数（Alt+Insert真好），用以提取私有变量。<br>
+<img src="https://s2.loli.net/2022/03/05/3xSRTBNOZqphQXm.png" alt="587SXNS~6@_H~L74L___6O7.png"><br>
+（我这个markdown显示代码区总有一小部分不被识别，搞了好长时间气死我了，直接上图片好吧）</li>
+<li>再创建一个StudentManage的类，类中放入显示用户界面以及各种函数。<br>
+<img src="https://s2.loli.net/2022/03/05/xDrUJKB3NSAeqW8.png" alt="G~K__Y_GW_P~4OSNMN_QGJF.png"></li>
+</ol>
+<hr>
+<h2 id="具体功能实现">具体功能实现</h2>
+<ol>
+<li>由于需要用到添加删除修改，以及用户输入等功能，所以需要导入Arraylist，Scanner包。<br>
+<img src="https://s2.loli.net/2022/03/05/V1xspRtcKwEn5Zk.png" alt="JLJB7_K95Q_BCXX2Q5CG5_V.png"></li>
+<li>用户界面直接用switch-case来选择。注意：除了退出功能外（System.exit(0);），都应该在用户界面循环，借用while(true)实现。<br>
+<img src="https://s2.loli.net/2022/03/05/C4LJxj2SEkz7nKD.png" alt="_T8U@N0_L5_O78HJI~_D_17.png"></li>
+<li>添加学生功能：首先接收学生学号，并判断学号是否已经使用（可以借助函数实现）!<img src="https://s2.loli.net/2022/03/05/mGRKLPAEY1fgaXQ.png" alt="image.png"><br>
+然后接收其他信息并实例化一个新的对象，传入参数初始化对象，把这个对象添加进集合即可，最后给出提示：添加成功。<br>
+<img src="https://s2.loli.net/2022/03/05/rScuOQR3JvgEHxV.png" alt="190NO_NT4_YKLDW0_L7_FM9.png"></li>
+<li>查找学生功能：首先判断此时集合是否为空，如果为空则返回提示信息，如果不为空，先给出列表格式，然后for循环直接遍历，输出时加上相应格式即可。<img src="https://s2.loli.net/2022/03/05/94mcgQVGH5qlhTy.png" alt="7Q58I_9QI_2_TW94PK2DOYK.png"></li>
+<li>删除学生功能：首先接收学生学号，并判断学号是否存在（可以借助参数变化来实现），然后for循环遍历，找到对应位置的对象，并记录该位置。删除操作只需要判断参数是初始值还是位置，对应执行函数即可。<img src="https://s2.loli.net/2022/03/05/MgkVuDX7mP39stR.png" alt="image.png"></li>
+<li>修改学生功能：首先接收新学生的信息，然后创建一个新对象，并进行赋值操作，for循环遍历找到该学生，用函数替换即可，最后输出提示成功的信息。<img src="https://s2.loli.net/2022/03/05/AptWnl9KrEymL8C.png" alt="image.png"></li>
+</ol>
+<h2 id="总结与思考">总结与思考</h2>
+<hr>
+<ol>
+<li>这个课设和大一上学期的课设难度差不多，但当时是面向过程，现在是面向对象，所以整个设计角度就不同。</li>
+<li>巩固了switch-case的用法，学会了System.exit(0)和灵活运用死循环while(true）。</li>
+<li>具体功能实现灵活运用了array里面的自带函数（记得导包），个人理解就是数组的存储形式，只不过把数据个体换成了对象（类似二维数组？）。</li>
+<li>优化功能包括数据重复及数据不存在，for循环遍历比较，老套路。</li>
+<li>浅浅入门一下，希望还能保持下去。</li>
+</ol>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/cn/java入门小课设/" data-toggle="tooltip" data-placement="top" title="java入门小课设">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/cn/The-first-step/" data-toggle="tooltip" data-placement="top" title="The first step">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=java入门小课设&body=Hi,I found this website and thought you might like it http://techqu.top/en/java入门小课设/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Sat Mar 05 2022 12:54:14 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Java入门小课设</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">思路</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%85%B7%E4%BD%93%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">具体功能实现</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%80%BB%E7%BB%93%E4%B8%8E%E6%80%9D%E8%80%83"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">总结与思考</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
     
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
+
+
+      <!-- Sidebar Container -->
+      <div class="
                 col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-      <!-- Main Content -->
-
-
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/cn/java入门小课设/">
-    <h2 class="post-title">
-      java入门小课设
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      Java入门小课设
-
-思路
-
-首先要创建一个Student类，类中放入学生的各种信息：学号、姓名、年龄、地址。并设置为私有变量，另外附加set、get函数（Alt+Insert真好），用以提取私有变量。
-
-（我这个markdown显示代码区总有一小部分不被识别，搞了好长时间气死我了，直接上图片好吧）
-再创建一个StudentManage的类，类中放入显示用户界面以及各种函数。
-
-
-
-具体功能......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by Mr.Qu on
-    2022-03-05
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#Java" title="Java">Java</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/en/java入门小课设/">
-    <h2 class="post-title">
-      java入门小课设
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      Java入门小课设
-
-思路
-
-首先要创建一个Student类，类中放入学生的各种信息：学号、姓名、年龄、地址。并设置为私有变量，另外附加set、get函数（Alt+Insert真好），用以提取私有变量。
-
-（我这个markdown显示代码区总有一小部分不被识别，搞了好长时间气死我了，直接上图片好吧）
-再创建一个StudentManage的类，类中放入显示用户界面以及各种函数。
-
-
-
-具体功能......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by Mr.Qu on
-    2022-03-05
-  </p>
-  <div class="tags">
-    
-    <a href="/tags/#Java" title="Java">Java</a>
-    
-  </div>
-  
-
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/cn/The-first-step/">
-    <h2 class="post-title">
-      The first step
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      
-The First Step
-
-鸣谢：
-
-
-首先感谢我的室友也是朋友：谢伟杰同学，带着我逐渐把自己的一些想法变成现实，制作这篇博客的初衷就是想着能记录自己的学习经历，还有大学生活。这条路走下去还是有奔头的，未来可期吧！
-
-
-
-近期计划：
-
-
-课内：这学期课少水多，大体上还是跟着老师走呗，有些能用的上的要提前赶出来。JAVA的郭老师真的不愧是业界大牛，讲课通俗易懂为人幽默…提前选了沈老师的L......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by Mr.Qu on
-    2022-03-01
-  </p>
-  <div class="tags">
-    
-  </div>
-  
-
-</div>
-<hr>
-
-<div class="post-preview">
-  
-  <!-- top start (article top hot config) -->
-  
-  <!-- top end -->
-  
-
-  <a href="/en/The-first-step/">
-    <h2 class="post-title">
-      The first step
-    </h2>
-    <h3 class="post-subtitle">
-      
-    </h3>
-    <div class="post-content-preview">
-      
-The First Step
-
-鸣谢：
-
-
-首先感谢我的室友也是朋友：谢伟杰同学，带着我逐渐把自己的一些想法变成现实，制作这篇博客的初衷就是想着能记录自己的学习经历，还有大学生活。这条路走下去还是有奔头的，未来可期吧！
-
-
-
-近期计划：
-
-
-课内：这学期课少水多，大体上还是跟着老师走呗，有些能用的上的要提前赶出来。JAVA的郭老师真的不愧是业界大牛，讲课通俗易懂为人幽默…提前选了沈老师的L......
-    </div>
-  </a>
-  
-  <p class="post-meta" style="margin: 10px 0;">
-    Posted by Mr.Qu on
-    2022-03-01
-  </p>
-  <div class="tags">
-    
-  </div>
-  
-
-</div>
-<hr>
-
-
-  <!-- Pager -->
-  <ul class="pager">
-    
-    
-  </ul>
-
-
-      <!-- 如果开启评论功能 -->
-      
-    </div>
-
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Visitors -->
-<h5><a href="/">VISITORS</a></h5>
-
-<div class="widget">
-  <span>
-    Viewed <b><i><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Times
-  </span>
-  <br />
-  <span>
-    <b><i><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Visitors In Total
-  </span>
-</div>
-
-
-        <hr>
-    
         <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#Java" title="Java">Java</a>
+            
+          </div>
+        </section>
+        
 
-<section>
-  <h5><a href="/tags/">FEATURED TAGS</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/tags/#Java" title="Java" rel="2">Java</a>
-    
-    
-  </div>
-</section>
-
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/about/">ABOUT ME</a></h5>
-  <div class="short-about">
-
-    
-    <img id="avatar_pic" src="/img/avatar/user.jpg" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>The Blog of QuShubiao </p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
-        <!-- RECENT POSTS -->
-
-<h5><a href="/">RECENT POSTS</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="cn/java%E5%85%A5%E9%97%A8%E5%B0%8F%E8%AF%BE%E8%AE%BE/">
-      <li>java入门小课设</li>
-    </a>
-    
-    <a href="en/java%E5%85%A5%E9%97%A8%E5%B0%8F%E8%AF%BE%E8%AE%BE/">
-      <li>java入门小课设</li>
-    </a>
-    
-    <a href="cn/The-first-step/">
-      <li>The first step</li>
-    </a>
-    
-    <a href="en/The-first-step/">
-      <li>The first step</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
         <!-- Friends Blog -->
-
-<h5><a href="/">FRIENDS</a></h5>
-<ul class="list-inline">
-  
-  <li><a href="https://smileslight.top/" target="_blank">Smile Slight</a></li>
-  
-</ul>
-
-
+        
         <hr>
-    
-        <!-- Archives -->
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
 
-<h5><a href="/archives/">archives</a></h5>
-<div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2022/03/">March 2022</a><span class="archive-list-count">4</span></li></ul>
-</div>
-
-
-        <hr>
-    
-        <!-- Categories -->
-
-<h5><a href="/categories/">categories</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="/categories/#Java">
-      <li>Java</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-</div>
-
-
-    
+          
+          <li>
+            <a href="https://smileslight.top/" target="_blank">Smile Slight</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
   </div>
-</div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->

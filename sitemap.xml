@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://techqu.top/cn/java%E5%85%A5%E9%97%A8%E5%B0%8F%E8%AF%BE%E8%AE%BE/</loc>
+    
+    <lastmod>2022-03-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://techqu.top/en/java%E5%85%A5%E9%97%A8%E5%B0%8F%E8%AF%BE%E8%AE%BE/</loc>
+    
+    <lastmod>2022-03-05</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://techqu.top/about/index.html</loc>
     
     <lastmod>2022-03-05</lastmod>
@@ -10,6 +24,13 @@
   
   <url>
     <loc>http://techqu.top/cn/The-first-step/</loc>
+    
+    <lastmod>2022-03-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://techqu.top/en/The-first-step/</loc>
     
     <lastmod>2022-03-01</lastmod>
     
@@ -52,6 +73,20 @@
   </url>
 
   
+  <url>
+    <loc>http://techqu.top/tags/Java/</loc>
+    <lastmod>2022-03-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>http://techqu.top/categories/Java/</loc>
+    <lastmod>2022-03-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
