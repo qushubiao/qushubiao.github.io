@@ -23,13 +23,6 @@
   </url>
   
   <url>
-    <loc>http://techqu.top/cn/java%E5%85%A5%E9%97%A8%E5%B0%8F%E8%AF%BE%E8%AE%BE/</loc>
-    
-    <lastmod>2022-03-05</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://techqu.top/en/java%E5%85%A5%E9%97%A8%E5%B0%8F%E8%AF%BE%E8%AE%BE/</loc>
     
     <lastmod>2022-03-05</lastmod>
@@ -37,14 +30,21 @@
   </url>
   
   <url>
-    <loc>http://techqu.top/cn/The-first-step/</loc>
+    <loc>http://techqu.top/cn/java%E5%85%A5%E9%97%A8%E5%B0%8F%E8%AF%BE%E8%AE%BE/</loc>
+    
+    <lastmod>2022-03-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://techqu.top/en/The-first-step/</loc>
     
     <lastmod>2022-03-01</lastmod>
     
   </url>
   
   <url>
-    <loc>http://techqu.top/en/The-first-step/</loc>
+    <loc>http://techqu.top/cn/The-first-step/</loc>
     
     <lastmod>2022-03-01</lastmod>
     
@@ -88,14 +88,14 @@
 
   
   <url>
-    <loc>http://techqu.top/tags/Java/</loc>
+    <loc>http://techqu.top/tags/C/</loc>
     <lastmod>2022-04-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://techqu.top/tags/C/</loc>
+    <loc>http://techqu.top/tags/Java/</loc>
     <lastmod>2022-04-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -104,14 +104,14 @@
 
   
   <url>
-    <loc>http://techqu.top/categories/Java/</loc>
+    <loc>http://techqu.top/categories/C/</loc>
     <lastmod>2022-04-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://techqu.top/categories/C/</loc>
+    <loc>http://techqu.top/categories/Java/</loc>
     <lastmod>2022-04-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
